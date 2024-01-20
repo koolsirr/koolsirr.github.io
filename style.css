@@ -271,16 +271,14 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  display: flex;
 }
 
 .about-details-container {
   justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
   display: flex;
+  flex-direction: column;
+  
 }
 
 .about-pic {
