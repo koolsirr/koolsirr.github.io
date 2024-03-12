@@ -1737,6 +1737,7 @@ input, select, textarea {
         align-items: center; /* Center items horizontally */
     	}
 	.project img {
+		width: 100%;
         margin-bottom: 20px; /* Add space between image and project details */
     }
 
