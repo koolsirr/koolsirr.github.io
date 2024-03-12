@@ -1,322 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Bishal Manandhar</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Bishal Manandhar</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic1.png" alt="Bishal Manandhar's profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Bishal Manandhar</h1>
-        <p class="section__text__p2">Computer Engineering student</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/cvv.pdf')" 
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/bishal-manandhar/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/koolsirr'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Beginner</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelors in Computer Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Hello I am Bishal Manandhar, a computer engineering student.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h3 class="experience-sub-title">Web Development</h3>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>BootStrap</h3>
-                  <p>Basic    </p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">App Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flutter</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Languages</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <!-- <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              /> -->
-            </div>
-            <h2 class="experience-sub-title project-title">Inflation Prediction System</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/koolsirr/Inflation-Prediction-System-Using-Linear-Regression'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/koolsirr/Inflation-Prediction-System-Using-Linear-Regression'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:bishalmanandharr@gmail.com">bishalmanandharr@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>My Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon" style="font-size: 35px;">&lt;/&gt;
+							</span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Bishal Manandhar</h1>
+								<h3>Computer Engineering Student</h3>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">About Me</a></li>
+								<li><a href="#skills">Skills</a></li> 
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h1 class="major">About Me</h1>
+								<span class="image main" style="display: block; text-align: center;"><img src="images/user.png " alt="Profile Pic" style="width: 300px; height: auto; display: inline-block;"/></span>
+								<p>check out my <a href="#projects">Projects</a>.</p>
+								
+							</article>
+
+						<!-- Work -->
+						<article id="skills">
+							<h1 class="major">Experience</h1>
+						
+							<!-- Web Development Section -->
+							<h2>Web Development</h2>
+							<ul>
+								<li><strong>HTML:</strong> Experienced</li>
+								<li><strong>CSS:</strong> Intermediate</li>
+								<li><strong>Javascript:</strong> Basic</li>
+								<li><strong>Bootstrap:</strong> Basic</li>
+							</ul>
+						
+							<!-- App Development Section -->
+							<h3>App Development</h3>
+							<ul>
+								<li><strong>Flutter:</strong> Intermediate</li>
+							</ul>
+						
+							<!-- Languages Section -->
+							<h3>Languages</h3>
+							<ul>
+								<li><strong>Python:</strong> Intermediate</li>
+								<li><strong>C:</strong> Intermediate</li>
+								<li><strong>C++:</strong> Intermediate</li>
+							</ul>
+						
+							<!-- Additional Sections can be added as needed -->
+						
+						</article>
+						
+
+						<!-- About -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+								
+							</article>
+
+						<!-- Contact -->
+						<article id="contact">
+							<h2 class="major">Contact</h2>
+						
+							<ul class="icons">
+								<li>
+									<a href="mailto:Bishalmanandharr@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a>&nbsp;&nbsp;&nbsp;&nbsp;Bishalmanandharr@gmail.com
+								</li><br>
+								<li style="margin-top: 15px;">
+									<a href="#" class="icon solid fa-map-marker"><span class="label">Location</span></a>&nbsp;&nbsp;&nbsp;&nbsp;Kathmandu, Nepal
+								</li><br>
+								<li style="margin-top: 15px;">
+									<a href="tel:+9779813239577" class="icon solid fa-phone"><span class="label">Phone</span></a>&nbsp;&nbsp;&nbsp;&nbsp;+977-9813239577
+								</li><br>
+								
+								<li style="margin-top: 15px;">
+									<a href="https://www.linkedin.com/in/bishal-manandhar/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/koolsirr/" class="icon brands fa-instagram"><span class="label">Instagram</span></a>
+								</li>
+								<li>
+									<a href="https://github.com/koolsirr" class="icon brands fa-github"><span class="label">GitHub</span></a>
+								</li>
+							</ul>
+						</article>
+						
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Bishal Manandhar.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
