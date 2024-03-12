@@ -1659,3 +1659,67 @@ input, select, textarea {
 		body.is-preload #footer {
 			opacity: 0;
 		}
+		.project-container {
+			background-color: #2a2f34; /* Background color of the container */
+			border-radius: 15px; /* Rounded corners */
+			padding: 20px; /* Padding inside the container */
+			margin-bottom: 20px; /* Spacing between containers */
+		}
+		.project {
+			display: flex; /* Use flexbox for layout */
+		}
+		
+		.project img {
+			width: 250px; /* Adjust the width of the image */
+			margin-right: 20px; /* Add spacing between image and project details */
+			border-radius: 10px; 
+		}
+		
+		.project-details {
+			flex: 1; /* Allow the project details to take up remaining space */
+			
+		}
+
+		.project-details p {
+			margin-bottom: 5px; /* Adjust the margin to reduce the gap */
+		}
+		.project-details ul {
+			margin-bottom: 10px; /* Adjust the margin to reduce the gap */
+		}
+		
+	
+		
+		.project h2 {
+			/* Styles for project titles */
+		}
+		
+		.project p {
+			/* Styles for project descriptions */
+		}
+		
+		.project a {
+			/* Styles for project links */
+		}
+		.button-container {
+			display: flex;
+			justify-content: center; 
+		}
+		
+		
+		.button {
+			height: 45px;
+			display: inline-block;
+			/* padding: 10px 20px; */
+			margin-right: 10px;
+			text-decoration: none;
+			color: #ffffff;
+			/* background-color: #007bff; */
+			border: none;
+			border-radius: 5px;
+			text-align: center; 
+		}
+		
+		.button:last-child {
+			margin-right: 0;
+		}
+		
